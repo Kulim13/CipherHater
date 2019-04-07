@@ -1,4 +1,4 @@
-# [Script for patching Sublime Text 3 and Sublime Merge]()
+# [Script for patching Sublime Text 3, Sublime Merge]()
 
 **Only for builds 3206 and 1111 and only for Linux x86_64**
 

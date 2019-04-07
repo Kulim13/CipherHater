@@ -39,15 +39,12 @@ Enough to do one time.
 
 ![BIG](images/1111.jpg)
 
-
 ---
 
-
 #### [First Step:]()
-
  
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/sublime_patch.sh)
- 
+
  
 #### How to patch the executable? Copy/Paste this script and run:
 
@@ -77,40 +74,45 @@ Entries to add to /etc/hosts:
  
  - Ctrl + w & click Enter to save file
  
- ---
-
+---
 
 #### [Third Step:]()
  
-Add IP addresses to block:
+Add IP addresses to block, iptables command:
+
+ - Block Host-1 - ```$ sudo iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT```
+ - Block Host-2 - ```$ sudo iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT```
+
+For Ubuntu UFW firewall script, block permanent all Sublime hosts:
 
 ```bash
-iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT
-iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT
-```
-
-For Ubuntu UFW:
-
-```bash
-$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Sublime out host-1'
-$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Sublime in host-1'
-$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Sublime out host-2'
-$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Sublime in host-2'
-$ sudo ufw status numbered verbose
+#!/bin/bash
+#
+$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Sublime out Host-1'
+$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Sublime in Host-1'
+$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Sublime out Host-2'
+$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Sublime in Host-2'
+$ sudo apt install iptables-persistent
 $ sudo dpkg-reconfigure iptables-persistent
+$ sudo ufw status numbered verbose
+#
+exit 0
 ```
 
 ---
-
 
 Run Sublime Text & appreciate the magic ^^
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
+<center>
+    <p><b>
+	"We do not pay for programs that you do not know how to protect..." &copy; CipherHater
+    </b></p>
+</center>
 
-**We do not pay for programs that you do not know how to protect...** &copy; CipherHater
-
-
-<center><p>Copyright &copy; 2019 CipherHater All rights reserved.</p></center>
-
-
+<center>
+    <p>
+	Copyright &copy; 2019 CipherHater All rights reserved.
+    </p>
+</center>

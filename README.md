@@ -50,7 +50,7 @@ Enough to do one time.
 #### [Second Step:]()
 
  - ```$ sudo nano /etc/hosts``` (u can use other text editor)
- - copy & paste
+ - Copy & Paste
 
 Entries to add to /etc/hosts:
 
@@ -66,7 +66,7 @@ Entries to add to /etc/hosts:
 0.0.0.0 download.sublimemerge.com
 ```
  
- - Ctrl + w & click enter to save
+ - Ctrl + w & click Enter to save file
  
  ---
 

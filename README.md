@@ -37,7 +37,7 @@ Enough to do one time.
 #### [First Step:]()
 
  
-[DOWNLOAD MAGIC SCRIPT](https://github.com/cipherhater/CipherHater/edit/master/sublime_patch.sh)
+[DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/sublime_patch.sh)
  
  
 #### How to patch the executable? Copy/Paste this script and run:

@@ -23,6 +23,9 @@ menu and the registration status of the program will be resumed.
 Enough to do one time.
 ```
 
+![BIG](images/3206.jpg)
+
+
 **Automatic re-registration is triggered by the "About Sublime Merge" in the program menu.**
 
 ```
@@ -33,6 +36,9 @@ be resumed.
 
 Enough to do one time.
 ```
+
+![BIG](images/1111.jpg)
+
 
 ---
 

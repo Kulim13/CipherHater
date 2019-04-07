@@ -49,7 +49,7 @@ Enough to do one time.
 
 #### [Second Step:]()
 
- - ```$ sudo nano /etc/hosts``` (u can use other text editor)
+ - ```$ sudo nano /etc/hosts``` (you can use other text editor)
  - Copy & Paste
 
 Entries to add to /etc/hosts:

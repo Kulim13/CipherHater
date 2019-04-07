@@ -12,17 +12,23 @@
 **Automatic re-registration is triggered by the "About Sublime Text" in the program menu.**
 
 ```
-If the registration is valid, then the window of the program "Preferences -> Settings"
-opens in a new window, if not, then you need to call the window "About Sublime Text" 
-from program menu and the registration status of the program will be resumed. Enough to do one time.
+ If the registration is valid, then the window of the program
+"Preferences -> Settings" opens in a new window, if not, then
+you need to call the window "About Sublime Text" from program
+menu and the registration status of the program will be resumed.
+
+Enough to do one time.
 ```
 
 **Automatic re-registration is triggered by the "About Sublime Merge" in the program menu.**
 
 ```
- If the registration is valid, "Preferences -> Theme" the Dark mode working, if not, 
-then you need to call the window "About Sublime Merge" from program menu and the registration status
-of the program will be resumed. Enough to do one time.
+ If the registration is valid, "Preferences -> Theme" the Dark mode
+working, if not, then you need to call the window "About Sublime Merge"
+from program menu and the registration status of the program will 
+be resumed. 
+
+Enough to do one time.
 ```
 
 ---

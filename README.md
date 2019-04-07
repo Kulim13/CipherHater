@@ -83,10 +83,10 @@ iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT
 For Ubuntu UFW:
 
 ```bash
-$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Block Sublime out host-1'
-$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Block Sublime in host-1'
-$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Block Sublime out host-2'
-$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Block Sublime in host-2'
+$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Sublime out host-1'
+$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Sublime in host-1'
+$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Sublime out host-2'
+$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Sublime in host-2'
 $ sudo ufw status numbered verbose
 $ sudo dpkg-reconfigure iptables-persistent
 ```

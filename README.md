@@ -37,14 +37,14 @@ Enough to do one time.
 #### [First Step:]()
 
  
+[DOWNLOAD MAGIC SCRIPT](https://github.com/cipherhater/CipherHater/edit/master/sublime_patch.sh)
+ 
+ 
 #### How to patch the executable? Copy/Paste this script and run:
 
 - ```$ sudo chmod +x sublime_patch.sh```
 - ```$ sudo ./sublime_patch.sh```
- 
-
- 
- 
+  
 ---
 
 #### [Second Step:]()

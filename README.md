@@ -1,37 +1,101 @@
-## Welcome to GitHub Pages
+# [Script for patching Sublime Text 3 and Sublime Merge]()
 
-You can use the [editor on GitHub](https://github.com/cipherhater/cracking/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Only for builds 3206 and 1111 and only for Linux x86_64**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### License key required: NO
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [Detailed explanation]()
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+**Automatic re-registration is triggered by the "About Sublime Text" in the program menu.**
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+If the registration is valid, then the window of the program "Preferences -> Settings"
+opens in a new window, if not, then you need to call the window "About Sublime Text" 
+from program menu and the registration status of the program will be resumed. Enough to do one time.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Automatic re-registration is triggered by the "About Sublime Merge" in the program menu.**
 
-### Jekyll Themes
+```
+ If the registration is valid, "Preferences -> Theme" the Dark mode working, if not, 
+then you need to call the window "About Sublime Merge" from program menu and the registration status
+of the program will be resumed. Enough to do one time.
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cipherhater/cracking/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### [First Step:]()
+
+ 
+#### How to patch the executable? Copy/Paste this script and run:
+
+- ```$ sudo chmod +x sublime_patch.sh```
+- ```$ sudo ./sublime_patch.sh```
+ 
+
+<details>
+	<summary>DOWNLOAD MAGIC SCRIPT</summary>
+<p> 
+
+</p>
+</details>
+ 
+ 
+---
+
+#### [Second Step:]()
+
+ - ```$ sudo nano /etc/hosts``` (u can use other text editor)
+ - copy & paste
+
+Entries to add to /etc/hosts:
+
+```
+0.0.0.0 www.sublimemerge.com
+0.0.0.0 sublimemerge.com
+0.0.0.0 www.sublimetext.com
+0.0.0.0 sublimetext.com
+0.0.0.0 sublimehq.com
+0.0.0.0 telemetry.sublimehq.com
+0.0.0.0 license.sublimehq.com
+0.0.0.0 download.sublimetext.com
+0.0.0.0 download.sublimemerge.com
+```
+ 
+ - Ctrl + w & click enter to save
+ 
+ ---
+
+
+#### [Third Step:]()
+ 
+Add IP addresses to block:
+
+```bash
+iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT
+iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT
+```
+
+For Ubuntu UFW:
+
+```bash
+$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Block Sublime out host-1'
+$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Block Sublime in host-1'
+$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Block Sublime out host-2'
+$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Block Sublime in host-2'
+$ sudo ufw status numbered verbose
+$ sudo dpkg-reconfigure iptables-persistent
+```
+
+---
+
+
+Run Sublime Text & appreciate the magic ^^
+
+
+**@cipherhater (c) 2019**
+

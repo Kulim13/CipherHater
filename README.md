@@ -108,5 +108,9 @@ Run Sublime Text & appreciate the magic ^^
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
 
-**@cipherhater (c) 2019**
+**We do not pay for programs that you do not know how to protect...** &copy; CipherHater
+
+
+<center><p>Copyright &copy; 2019 CipherHater All rights reserved.</p></center>
+
 

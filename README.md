@@ -82,19 +82,25 @@ Add IP addresses to block, iptables command:
 
  - Block Host-1 - ```$ sudo iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT```
  - Block Host-2 - ```$ sudo iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT```
+ - Block Host-3 - ```$ sudo iptables -A OUTPUT -d 209.20.83.249/32 -j REJECT```
+ - Block Host-4 - ```$ sudo iptables -A OUTPUT -d 104.236.0.104/32 -j REJECT```
 
 For Ubuntu UFW firewall script, block permanent all Sublime hosts:
 
 ```bash
 #!/bin/bash
 #
-$ sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Sublime out Host-1'
-$ sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Sublime in Host-1'
-$ sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Sublime out Host-2'
-$ sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Sublime in Host-2'
-$ sudo apt install iptables-persistent
-$ sudo dpkg-reconfigure iptables-persistent
-$ sudo ufw status numbered verbose
+sudo ufw insert 1 deny out to 45.55.255.55/32 comment 'Sublime out Host-1'
+sudo ufw insert 2 deny in to 45.55.255.55/32 comment 'Sublime in Host-1'
+sudo ufw insert 3 deny out to 45.55.41.223/32 comment 'Sublime out Host-2'
+sudo ufw insert 4 deny in to 45.55.41.223/32 comment 'Sublime in Host-2'
+sudo ufw insert 5 deny out to 209.20.83.249/32 comment 'Sublime out Host-3'
+sudo ufw insert 6 deny in to 209.20.83.249/32 comment 'Sublime in Host-3'
+sudo ufw insert 7 deny out to 104.236.0.104/32 comment 'Sublime out Host-4'
+sudo ufw insert 8 deny in to 104.236.0.104/32 comment 'Sublime in Host-4'
+sudo apt install iptables-persistent
+sudo dpkg-reconfigure iptables-persistent
+sudo ufw status numbered verbose
 #
 exit 0
 ```

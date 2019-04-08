@@ -1,6 +1,10 @@
 # [Script for patching Sublime Text 3, Sublime Merge]()
 
-**Only for builds 3206 and 1111 and only for Linux x86_64**
+<center>
+	<p><b>
+		Only for builds 3206 and 1111 and only for Linux x86_64
+	</b></p>
+</center>
 
 #### License key required: NO
 
@@ -85,7 +89,7 @@ Add IP addresses to block, iptables command:
  - Block Host-3 - ```$ sudo iptables -A OUTPUT -d 209.20.83.249/32 -j REJECT```
  - Block Host-4 - ```$ sudo iptables -A OUTPUT -d 104.236.0.104/32 -j REJECT```
 
-For Ubuntu UFW firewall script, block permanent all Sublime hosts:
+For Ubuntu UFW firewall script, permanent block all Sublime hosts:
 
 ```bash
 #!/bin/bash

@@ -57,8 +57,8 @@ fi
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}Sublime Text 3 Build: ${LMAGENTA} $versions_text\n\n \
-	${GREEN}Sublime Merge Build: ${LMAGENTA} $versions_merge\n\n"
+	${GREEN}Sublime Text 3 Build: ${LMAGENTA} $version_text\n\n \
+	${GREEN}Sublime Merge Build: ${LMAGENTA} $version_merge\n\n"
 
 echo -en ${RESTORE}
 

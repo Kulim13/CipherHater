@@ -1,7 +1,3 @@
----
-title: "CipherHater"
-permalink: main/
----
 
 # [Script for patching Sublime Text 3, Sublime Merge](https://cipherhater.pro/sublime/)
 

@@ -119,7 +119,7 @@ Run Sublime Text & appreciate the magic ^^
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
-## ![VUESCAN](vuescan.md)
+ ![VUESCAN](vuescan.md)
 
 <center>
     <p><b>

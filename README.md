@@ -127,6 +127,6 @@ Run Sublime Text & appreciate the magic ^^
 
 <center>
     <p>
-	[Copyright &copy; 2019 CipherHater All rights reserved.](vuescan.md)
+	Copyright &copy; 2019 CipherHater All rights reserved.
     </p>
 </center>

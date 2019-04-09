@@ -35,7 +35,11 @@ license key when purchasing the program.
 
 - [DOWNLOAD ORIGINAL VUESCAN](orig/vuex6496.tgz)
 
-- Unzip the package to /home/user/VueScan `$ tar zxf vuex6496.tgz`
+- Unzip the package to `/home/<user>/VueScan`:
+
+```
+$ tar zxf vuex6496.tgz
+```
 
 - If you have previously installed this program with a license,
   **remove the file** `/home/<user>/.vuescanrc`

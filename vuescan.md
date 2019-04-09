@@ -15,12 +15,16 @@ permalink: vuescan/
 
 ---
 
+![VUESCAN](images/vuescan.jpg)
+
 
 ## [Detailed explanation]()
 
-
 ```
-TEST
+ Since now the license key is not needed and is not used by the program, 
+it is not possible to send scanned images via the e-mail via the VueScan
+interface, due to the absence of the sender's address that is in the
+license key when purchasing the program.
 ```
 
 ---
@@ -28,6 +32,13 @@ TEST
 #### [First Step:]()
  
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/vuescan_patch.sh)
+
+- [DOWNLOAD ORIGINAL VUESCAN](orig/vuex6496.tgz)
+
+- Unzip the package to /home/<user>/VueScan ```$ tar zxf vuex6496.tgz```
+
+- If you have previously installed this program with a license,
+  **remove the file** `/home/<user>/.vuescanrc`
 
  
 #### How to patch the executable? Copy/Paste this script and run:
@@ -52,7 +63,7 @@ Entries REMOVE from /etc/hosts:
  
  - click Enter to save file
  
-**You can not add to the hosts!**
+**You can not add *hamrick* hosts to the hosts file!**
 
 **The VueScan program parses /etc/host for the presence of their hosts in the file!**
 
@@ -101,7 +112,7 @@ exit 0
 
 ---
 
-Run VueScan & appreciate the magic ^^
+ Run VueScan & appreciate the magic ^^
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 

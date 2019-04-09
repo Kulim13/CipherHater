@@ -1,3 +1,8 @@
+---
+title: "Sublime"
+permalink: sublime/
+---
+
 # [Script for patching Sublime Text 3, Sublime Merge]()
 
 <center>

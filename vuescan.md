@@ -1,3 +1,8 @@
+---
+title: "VueScan"
+permalink: vuescan/
+---
+
 # [Script for patching VueScan 9 x64]()
 
 <center>

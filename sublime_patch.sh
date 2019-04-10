@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching Sublime Text 3 Build 3206 and Sublime Merge Build 1111
+# Brief: Script for patching Sublime Text 3 Build 3207 and Sublime Merge Build 1111
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -37,10 +37,10 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_text='3206'
-version_merge='1111'
+versions_text='3207'
+versions_merge='1111'
 
-support_versions=${version_text}${version_merge}
+support_versions=${versions_text}${versions_merge}
 
 #
 ##
@@ -57,8 +57,8 @@ fi
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}Sublime Text 3 Build: ${LMAGENTA} $version_text\n\n \
-	${GREEN}Sublime Merge Build: ${LMAGENTA} $version_merge\n\n"
+	${GREEN}Sublime Text 3 Build: ${LMAGENTA} $versions_text\n\n \
+	${GREEN}Sublime Merge Build: ${LMAGENTA} $versions_merge\n\n"
 
 echo -en ${RESTORE}
 
@@ -227,23 +227,23 @@ function patch {
 
 echo -en ${CYAN} '\nStart patching...\n\n'
 case $v in
-    "3206" )
-	st3206='
-	0x313659 \x08 0x31365A \x01 0x31365B \x90 0x31365C \x90 0x3136B1 \x08 0x3136B2 \x01 0x3136B3 \x90 0x3136B4 \x90
-	0x31C57C \xC3 0x31C57D \x90 0x31C5EB \x90 0x31C905 \x74 0x31C9C6 \x90 0x31C9C7 \x90 0x31C9C8 \x90 0x31C9C9 \x90
-	0x31C9CA \x90 0x31C9CB \x90 0x31C9CC \x90 0x31C9CD \x90 0x31C9CE \x90 0x31C9E6 \x75 0x31D258 \xC3 0x31D6CF \x90
-	0x31D6D0 \x90 0x31D6D1 \x90 0x31D6D2 \x90 0x31D6D3 \x90 0x31D6D4 \x90 0x31D9E2 \xC3 0x31D9E3 \x90 0x31D9E4 \x90
-	0x31DBCA \x90 0x31DBCB \x90 0x31DBCC \x90 0x31DBCD \x90 0x31DBCE \x90 0x31DBCF \x90 0x31DBD0 \x90 0x31DBD1 \x90
-	0x31DBD2 \x90 0x31DBD3 \x90 0x31DBD4 \x90 0x31DBD5 \x90 0x31DBD6 \x90 0x31DBD7 \xC3 0x31DBD8 \x90 0x31DBD9 \x90
-	0x31DBDA \x90 0x31DBDB \x90 0x31DBDC \x90 0x31DBDD \x90 0x31DBDE \x90 0x31DBDF \x90 0x31DBE0 \x90 0x31DBE1 \x90
-	0x31DBE2 \x90 0x31DBE3 \x90 0x31DBE4 \x90 0x31DBE5 \xC3 0x3BF406 \x90 0x3BF407 \x90 0x3BF408 \x90 0x3BF409 \x90
-	0x3BF40A \x90 0x3BF40B \x90 0x3BF40C \x90 0x3BF4CA \x90 0x3BF4CB \x90 0x3BF4CC \x90 0x3BF4CD \x90 0x3BF4CE \x90
-	0x3BF4CF \x90 0x3BF4D0 \x90 0x3BF536 \x90 0x3BF537 \x90 0x3BF538 \x90 0x3BF539 \x90 0x3BF53A \x90 0x3BF53B \x90
-	0x3BF53C \x90 0x3BF53E \xC3 0x3C0459 \x0F 0x3C045A \x01 0x3C045B \x90 0x3C045C \x90 0x3C045D \x90 0x3C045E \x90
-	0x3C045F \x90 0x3C0460 \x90 0x479800 \x90 0x479801 \x90 0x479806 \x90 0x479807 \x90 0x479808 \x90 0x479809 \x90
-	0x3C046E \x90 0x3C046F \x90 0x3C0470 \x90 0x3C0471 \x90 0x3C0472 \x90 0x3C0473 \x90 0x3C0474 \x90 0x3C0475 \x90 
-	0x3C0476 \x90 0x3C0477 \x90 0x3C0478 \x90 0x3C0479 \x90 0x3C047A \x90 0x3C047B \x90 0x47980A \x90 0x47980B \x90'
-	patch sublime_text $st3206
+    "3207" )
+	st3207='
+	0x313658 \x08 0x313659 \x01 0x31365A \xEB 0x31C4F0 \xC3 0x31C4F1 \x90 0x31C55F \x90 0x31C878 \x74 0x31C93E \x90
+	0x31C93F \x90 0x31C945 \x90 0x31C946 \x90 0x31C94C \x90 0x31C94D \x90 0x31C951 \x90 0x31C952 \x90 0x31C958 \x90
+	0x31C959 \x90 0x31C96D \x75 0x31D1EF \xC3 0x31D667 \x90 0x31D668 \x90 0x31D669 \x90 0x31D66A \x90 0x31D66B \x90
+	0x31D66C \x90 0x31D97A \xC3 0x31D97B \x90 0x31D97C \x90 0x31DB62 \x90 0x31DB63 \x90 0x31DB64 \x90 0x31DB65 \x90
+	0x31DB66 \x90 0x31DB67 \x90 0x31DB68 \x90 0x31DB69 \x90 0x31DB6A \x90 0x31DB6B \x90 0x31DB6C \x90 0x31DB6D \x90
+	0x31DB6E \x90 0x31DB6F \xC3 0x31DB70 \x90 0x31DB71 \x90 0x31DB72 \x90 0x31DB73 \x90 0x31DB74 \x90 0x31DB75 \x90
+	0x31DB76 \x90 0x31DB77 \x90 0x31DB78 \x90 0x31DB79 \x90 0x31DB7A \x90 0x31DB7B \x90 0x31DB7C \x90 0x31DB7D \xC3
+	0x3BF386 \x90 0x3BF387 \x90 0x3BF388 \x90 0x3BF389 \x90 0x3BF38A \x90 0x3BF38B \x90 0x3BF38C \x90 0x3BF44A \x90
+	0x3BF44B \x90 0x3BF44C \x90 0x3BF44D \x90 0x3BF44E \x90 0x3BF44F \x90 0x3BF450 \x90 0x3BF4B6 \x90 0x3BF4B7 \x90
+	0x3BF4B8 \x90 0x3BF4B9 \x90 0x3BF4BA \x90 0x3BF4BB \x90 0x3BF4BC \x90 0x3BF4BE \xC3 0x3C03D9 \x0F 0x3C03DA \x01
+	0x3C03DB \x90 0x3C03DC \x90 0x3C03DD \x90 0x3C03DE \x90 0x3C03DF \x90 0x3C03E0 \x90 0x3C03EE \x90 0x3C03EF \x90
+	0x3C03F0 \x90 0x3C03F1 \x90 0x3C03F3 \x90 0x3C03F4 \x90 0x3C03F5 \x90 0x3C03F6 \x90 0x3C03F7 \x90 0x3C03F8 \x90
+	0x3C03FA \x90 0x3C03FB \x90 0x4797A0 \x90 0x4797A1 \x90 0x4797A6 \x90 0x4797A7 \x90 0x4797A8 \x90 0x4797A9 \x90
+	0x4797AA \x90 0x4797AB \x90'
+	patch sublime_text $st3207
 	;;
 
     "1111" )

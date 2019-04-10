@@ -7,7 +7,7 @@ permalink: sublime/
 
 <center>
 	<p><b>
-		Only for builds 3206 and 1111 and only for Linux x86_64
+		Only for builds 3207 and 1111 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -32,7 +32,7 @@ menu and the registration status of the program will be resumed.
 Enough to do one time.
 ```
 
-![BIG](images/3206.jpg)
+![BIG](images/3207.jpg)
 
 
 **Automatic re-registration is triggered by the "About Sublime Merge" in the program menu.**

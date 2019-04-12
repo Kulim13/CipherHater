@@ -11,7 +11,7 @@ permalink: sublime/
 	</b></p>
 </center>
 
-#### License key required: NO
+#### License key required: YES (License key in patch, you can enter your name!)
 
 ---
 
@@ -21,15 +21,11 @@ permalink: sublime/
 ## [Detailed explanation]()
 
 
-**Automatic re-registration is triggered by the "About Sublime Text" in the program menu.**
+**The patch will show the license key!**
 
 ```
-If the registration is valid, then the window of the program
-"Preferences -> Settings" opens in a new window, if not, then
-you need to call the window "About Sublime Text" from program
-menu and the registration status of the program will be resumed.
-
-Enough to do one time.
+After the patch and enter the license key, the program is fully functional.
+Instead of "Free World User" you can enter your name or any text.
 ```
 
 ![BIG](images/3207.jpg)
@@ -59,7 +55,8 @@ Enough to do one time.
 
 - ```$ sudo chmod +x sublime_patch.sh```
 - ```$ sudo ./sublime_patch.sh```
-  
+- Copy license key from console (can be copied with the mouse)
+
 ---
 
 #### [Second Step:]()
@@ -116,7 +113,14 @@ exit 0
 
 ---
 
-Run Sublime Text & appreciate the magic ^^
+#### [Fourth step:]()
+
+- Start Sublime Text 3 program
+- Paste License key in registration window - **"Help"->"Enter License"**
+
+---
+
+Restart Sublime Text & appreciate the magic ^^
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 

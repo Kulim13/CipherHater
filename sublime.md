@@ -30,18 +30,6 @@ Instead of "Free World User" you can enter your name or any text.
 
 ![BIG](images/3207.jpg)
 
-
-**Automatic re-registration is triggered by the "About Sublime Merge" in the program menu.**
-
-```
-If the registration is valid, "Preferences -> Theme" the Dark mode
-working, if not, then you need to call the window "About Sublime Merge"
-from program menu and the registration status of the program will 
-be resumed. 
-
-Enough to do one time.
-```
-
 ![BIG](images/1111.jpg)
 
 ---
@@ -115,12 +103,15 @@ exit 0
 
 #### [Fourth step:]()
 
-- Start Sublime Text 3 program
+- Start Sublime Text/Merge program
 - Paste License key in registration window - **"Help"->"Enter License"**
+  **One license key for Sublime Text/Merge**
+- Instead of **"Free World User"** you can enter your name or any text
+- Press the button **"Use License"**
 
 ---
 
-Restart Sublime Text & appreciate the magic ^^
+Restart Sublime Text/Merge & appreciate the magic ^^
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 

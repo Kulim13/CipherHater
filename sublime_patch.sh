@@ -111,33 +111,6 @@ read -p 'Backup Sublime Text 3 binary? [y/n]: ' bt
 	echo
     fi
 
-echo -en ${WHITE} '\n'
-read -p 'Show Sublime Text 3 license key? [y/n]: ' key
-
-if [ -n $key ] && [ $key != "n" ]; then
-
-echo -en ${LYELLOW} '\n' \
-	'Instead of "Free World User" you can enter your name or any text.\n'
-echo -en ${WHITE}
-
-cat <<- license
-	
-— BEGIN LICENSE —–
-Free World User
-00 User License
-HK3B-100025
-1D77F72E 390CDD93 4DCBA022 FAF60790
-61AA12C0 A37081C5 D0316412 4584D136
-94D7F7D4 95BC8C1C 527DA828 560BB037
-D1EDDD8C AE7B379F 50C9D69D B35179EF
-2FE898C4 8E4277A8 555CE714 E1FB0E43
-D5D52613 C3D12E98 BC49967F 7652EED2
-9D2D2E61 67610860 6D338B72 5CF95C69
-E36B85CC 84991F19 7575D828 470A92AB
-—— END LICENSE ——
-	
-license
-fi
 echo -en ${RESTORE}
 }
 
@@ -189,6 +162,7 @@ read -p 'Backup Sublime Merge binary? [y/n]: ' bm
 	cp -i "$p/sublime_merge" "$p/sublime_merge.orig"
 	echo
     fi
+
 echo -en ${RESTORE}
 }
 
@@ -213,7 +187,7 @@ mainWork
 ##
 ### Detect Sublime build number #############################################################
 
-echo -en ${PURPLE} 'Checking Sublime Text/Merge version...\n\n'
+echo -en ${PURPLE} '\nChecking Sublime Text/Merge version...\n\n'
 if [[ -f "$p/changelog.txt" ]]; then
 	v=$(cat "$p/changelog.txt" | grep -P -o '^<h2>.*Build \d{4}' | grep -P -o '\d{4}' | head -n 1)
 	echo -en ${LYELLOW}
@@ -276,19 +250,7 @@ case $v in
 
     "1111" )
 	sm1111='
-	0x2F6295 \x0F 0x2F6296 \x01 0x2F6297 \x90 0x2F6298 \x90 0x2F6299 \x90 0x2F629A \x90 0x2F629B \x90 0x2F629C \x90
-	0x2F62AA \x90 0x2F62AB \x90 0x2F62AC \x90 0x2F62AD \x90 0x2F62AE \x90 0x2F62AF \x90 0x2F62B0 \x90 0x2F62B1 \x90
-	0x2F62B2 \x90 0x2F62B3 \x90 0x2F62B4 \x90 0x2F62B5 \x90 0x2F62B6 \x90 0x2F62B7 \x90 0x308216 \x90 0x308217 \x90
-	0x308218 \x90 0x308219 \x90 0x30821A \x90 0x30821B \x90 0x30821C \x90 0x30821E \xC3 0x308288 \x90 0x30830A \x90
-	0x30830B \x90 0x30830C \x90 0x30830D \x90 0x30830E \x90 0x30830F \x90 0x308310 \x90 0x308312 \xC3 0x30EC74 \xC3
-	0x30EC75 \x90 0x30ECE3 \x90 0x30ECE4 \xC3 0x30ECE5 \x90 0x30ECE6 \x90 0x30EF35 \x90 0x30F357 \xC3 0x30FBD3 \xC3
-	0x30FCE0 \x90 0x30FCE1 \x90 0x30FCE2 \x90 0x30FCE3 \x90 0x30FCE4 \x90 0x30FCE5 \x90 0x30FCE6 \x90 0x30FCE7 \x90
-	0x30FCE8 \x90 0x30FCE9 \x90 0x30FCEA \x90 0x30FCEB \x90 0x30FCEC \x90 0x30FCED \x90 0x30FCEE \x90 0x30FCEF \x90
-	0x30FCF0 \x90 0x30FCF1 \x90 0x30FCF2 \x90 0x30FCF3 \x90 0x30FCF4 \x90 0x30FCF5 \x90 0x30FCF6 \x90 0x30FCF7 \x90
-	0x30FCF9 \x90 0x30FCFA \x90 0x30FCFB \x90 0x310037 \xEB 0x310F6C \x08 0x310F6D \x01 0x310F6E \xEB 0x3DDC2C \xEB
-	0x3DDC45 \x90 0x3DDC46 \x90 0x3DDC47 \x90 0x3DDC48 \x90 0x3DDC49 \x90 0x3DDC4A \x90 0x501B2A \x90 0x501B2B \x90
-	0x501B30 \x90 0x501B31 \x90 0x501B32 \x90 0x501B33 \x90 0x501B34 \x90 0x501B35 \x90 0x501B3A \xE9 0x501B3B \x8F
-	0x501B3C \x00 0x501B3F \x0F 0x501B40 \x84 0x501B41 \x89 0x501B42 \x00 0x501B43 \x00 0x501B44 \x00 0x7BC5D1 \xEB'
+	0x30F0FE \x02 0x30F13E \x90 0x30F13F \x90 0x30F156 \xEB 0x30F8CA \x90 0x30F8CB \x90'
 	patch sublime_merge $sm1111
 	;;
 
@@ -299,6 +261,36 @@ case $v in
 esac
 
 echo -en ${LCYAN} 'The patching was done without errors.\n\n'
+
+echo -en ${WHITE} '\n'
+read -p 'Show Sublime Text/Merge license key? [y/n]: ' key
+
+if [ -n $key ] && [ $key != "n" ]; then
+
+echo -en ${LYELLOW} '\n' \
+	'Instead of "Free World User" you can enter your name or any text.\n'
+echo -en ${WHITE}
+
+cat <<- license
+	
+— BEGIN LICENSE —–
+Free World User
+00 User License
+HK3B-100025
+1D77F72E 390CDD93 4DCBA022 FAF60790
+61AA12C0 A37081C5 D0316412 4584D136
+94D7F7D4 95BC8C1C 527DA828 560BB037
+D1EDDD8C AE7B379F 50C9D69D B35179EF
+2FE898C4 8E4277A8 555CE714 E1FB0E43
+D5D52613 C3D12E98 BC49967F 7652EED2
+9D2D2E61 67610860 6D338B72 5CF95C69
+E36B85CC 84991F19 7575D828 470A92AB
+—— END LICENSE ——
+	
+license
+fi
+echo -en ${RESTORE}
+
 echo -en ${LGREEN} 'Congratulation!\n'
 echo -en ${RESTORE} '\n'
 #

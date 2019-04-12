@@ -7,10 +7,7 @@
 	</b></p>
 </center>
 
-#### Sublime Text 3 license key required: YES (License key in patch, you can enter your name!)
-
-#### Sublime Merge license key required: NO
-
+#### Sublime Text/Merge license key required: YES (License key in patch, you can enter your name!)
 
 ![BIG](images/big.jpg)
 

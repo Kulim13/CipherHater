@@ -105,7 +105,9 @@ exit 0
 
 - Start Sublime Text/Merge program
 - Paste License key in registration window - **"Help"->"Enter License"**
-  **One license key for Sublime Text/Merge**
+
+  `One license key for Sublime Text/Merge!`
+
 - Instead of **"Free World User"** you can enter your name or any text
 - Press the button **"Use License"**
 

@@ -21,10 +21,10 @@ permalink: vuescan/
 ## [Detailed explanation]()
 
 ```
- Since now the license key is not needed and is not used by the program, 
-it is not possible to send scanned images via the e-mail via the VueScan
-interface, due to the absence of the sender's address that is in the
-license key when purchasing the program.
+Since now the license key is not needed and is not used by the program, 
+it is not possible to send scanned images the e-mail via the VueScan
+interface, due to the not present of the sender's address that is in the
+licenses when purchasing the program.
 ```
 
 ---
